@@ -1,7 +1,7 @@
 #Bosa Controller/State solution
 
 - install node from https://nodejs.org/dist/v14.19.3/node-v14.19.3.pkg
-- curl https://install.meteor.com/ | sh
+- run `curl https://install.meteor.com/ | sh`
 - download https://github.com/garrilla/BOSA/archive/refs/heads/master.zip
 
 
