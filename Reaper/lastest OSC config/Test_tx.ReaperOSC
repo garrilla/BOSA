@@ -1,0 +1,17 @@
+# Basic Transport
+RECORD t/record
+STOP t/stop
+PLAY t/play
+PAUSE t/pause
+
+# move cursor
+FRAMES s/frames/str
+TIME s/time/str
+
+# markers
+GOTO_MARKER i/marker t/marker/@
+
+# track contols - used for proxying messages
+TRACK_VOLUME n/track/volume n/track/@/volume
+TRACK_VOLUME s/track/volume/str s/track/@/volume/str
+TRACK_VOLUME f/track/volume/db f/track/@/volume/db
