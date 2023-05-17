@@ -2,10 +2,12 @@ import { Meteor } from 'meteor/meteor';
 import { LinksCollection } from '/imports/api/links';
 import { DevicesCollection } from '/imports/api/devices';
 import { SceneCollection } from '/imports/api/scenes';
+import { MsgsCollection } from '/imports/api/scenes';
 import '../imports/api/deviceMethods';
 import '../imports/api/oscMethods'
 import '../imports/api/devicesPublications'
 import '../imports/api/scenesPublication'
+import '../imports/api/messagesPublication'
 
 function insertDevice({ device, name, usb, status, battery, volume }) {
   DevicesCollection.insert({device, name,  usb, status, battery, volume, createdAt: new Date()});
