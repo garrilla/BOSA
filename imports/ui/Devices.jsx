@@ -2,21 +2,21 @@ import React from 'react';
 import { useTracker } from 'meteor/react-meteor-data';
 import { DevicesCollection } from '../api/devices';
 
-export const Info = () => {
+export const Devices = () => {
   const devices = useTracker(() => {
-    console.log(DevicesCollection.find().count())
+    console.log("Device collection find() = ",DevicesCollection.find().count())
     return DevicesCollection.find().fetch();
   });
 
   var boxclass;
 
   return (
-    <div className='wrapper cf'>
+    <div id="devices" className='wrapper cf dev-container'>
       <div className='header'>Device Info</div>
       {devices.map(
         device => 
         
-          <div className={`box ${device.status} ${device.usb}`} name={device._id}> 
+          <div key={device.name} className={`box ${device.status} ${device.usb}`} name={device._id}> 
             <div className='device'>{device.name}</div>
             <div className='status'>usb: 
               {device.usb!='true' ? 

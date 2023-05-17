@@ -11,7 +11,7 @@ export const Sceneshow = () => {
   var boxclass;
 
   return (
-    <div className='wrapper cf'>
+    <div id="messages" className='wrapper cf'>
       <span></span>
       {scenes.map(
         scene => 

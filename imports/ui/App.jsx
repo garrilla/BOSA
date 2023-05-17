@@ -1,15 +1,18 @@
 import React from 'react';
-import { Hello } from './Hello.jsx';
-import { Info } from './Info.jsx';
-import { Sceneshow } from './Sceneshow.jsx';
+import { Menu } from './Menu.jsx';
+import { Devices } from './Devices.jsx';
+import { Messages } from './Messages.jsx';
 
 export const App = () => (
   <div>
     <h1>BOSA !</h1>
-    <Hello/>
     
-    <Sceneshow/>
-    <Info/>
+    <div id="flex-container" className='flex'>
+      <Menu/>
+      <Devices/>
+      <Messages/>
+      
+    </div>
   </div>
 );
 
