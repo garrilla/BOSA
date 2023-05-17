@@ -6,7 +6,7 @@
 
 - at level of user ~/ create a new folder 'projects' and add a folder inside 'bosa'
 - open bosa folder with a terminal
-- run `cp -R ~/Downloads/BOSA-master ~/projects/bosa
+- run `cp -R ~/Downloads/BOSA-master ~/projects/bosa`
 
 - run `meteor run`
 
