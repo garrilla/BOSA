@@ -1,5 +1,16 @@
 #Bosa Controller/State solution
 
+- install node from https://nodejs.org/dist/v14.19.3/node-v14.19.3.pkg
+- curl https://install.meteor.com/ | sh
+- download https://github.com/garrilla/BOSA/archive/refs/heads/master.zip
+
+
+
+
+
+
+##About this repo
+
 This repository contains the Reaper Timeline session and Meteor App for the Bosa Project. 
 
 The basic operation is to act as a controller, coordinating mobile devices on the network to broadcast simultaneous play/stop events 
